@@ -1,0 +1,74 @@
+// FOOTER
+
+.footer {
+  background-color: #252641;
+  padding: 50px 0;
+  margin-top: 50px;
+  &__inner {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+  }
+  &__inner > :first-child {
+    align-items: center;
+    justify-content: center;
+  }
+  &__mb {
+    margin-bottom: 50px;
+  }
+  &__logo {
+    padding-right: 30px;
+    margin-right: 30px;
+    border-right: 1px solid #626381;
+  }
+  &__heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+  }
+  &__subscribe {
+    font-weight: 500;
+    font-size: 22px;
+    color: #b2b3cf;
+    margin-bottom: 10px;
+  }
+  &__input {
+    padding: 15px 30px;
+    border: 1px solid #83839a;
+    border-radius: 80px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #83839a;
+  }
+  &__btn {
+    background: linear-gradient(105.5deg, #545ae7 19.57%, #393fcf 78.85%);
+    border-radius: 60px;
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  &__conditions {
+    justify-content: center;
+  }
+  &__inf {
+    font-weight: 400;
+    font-size: 20px;
+    color: #b2b3cf;
+    line-height: 100%;
+  }
+  &__inf:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #626381;
+  }
+  &__license {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #b2b3cf;
+    margin-top: 10px;
+  }
+}

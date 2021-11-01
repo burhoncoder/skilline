@@ -1,0 +1,480 @@
+.container {
+  max-width: 1300px;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1100px;
+  }
+  .header {
+    &__title {
+      font-size: 40px;
+      line-height: 120%;
+    }
+    &__inf {
+      padding-top: 20px;
+    }
+    &__join {
+      margin: 0 0 15px 0;
+    }
+    &__buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 767px;
+  }
+  .section-padding {
+    padding: 30px 0;
+  }
+  .heading {
+    max-width: 100%;
+    &__title {
+      font-size: 35px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 150%;
+    }
+  }
+  .features .grid {
+    flex-direction: column;
+  }
+  .content {
+    text-align: center;
+  }
+  .box {
+    padding: 30px 0;
+    .content:nth-child(n) {
+      order: 2;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+    .box__title:nth-child(n) {
+      padding: 0;
+    }
+    .box__descr:nth-child(n) {
+      padding: 0;
+    }
+    .image:nth-child(n) {
+      order: 1;
+      max-width: 500px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__more {
+      margin-top: 20px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+    &__btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__subtitle {
+      margin: 0 auto 20px auto;
+    }
+  }
+
+  .header {
+    &__burger {
+      display: block;
+    }
+    &__nav {
+      justify-content: space-between;
+    }
+    &__log button {
+      padding: 10px 30px;
+      font-size: 18px;
+    }
+    .container .nav {
+      display: none;
+    }
+    &__body {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__inf {
+      order: 2;
+      width: 100%;
+      text-align: center;
+    }
+    &__hero {
+      order: 1;
+    }
+    &__title {
+      line-height: 100%;
+    }
+    &__buttons {
+      align-items: center;
+      padding-bottom: 20px;
+    }
+    &__join {
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+    &__video {
+      padding: 0 0 0 55px;
+    }
+    &__video::before {
+      width: 45px;
+      height: 45px;
+      background-size: 20px auto;
+      background-position: 16px;
+    }
+  }
+
+  .partners {
+    &__grid img {
+      width: 20%;
+      padding: 10px;
+    }
+    &__grid {
+      justify-content: start;
+    }
+  }
+
+  .cloud {
+    &__grid {
+      margin-top: 50px;
+    }
+    &__wrapper {
+      width: 50%;
+    }
+    &__card {
+      padding-top: 50px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+  }
+
+  .skilline {
+    &__grid {
+      flex-direction: column;
+    }
+    &__card:first-child {
+      margin-bottom: 20px;
+    }
+    &__card {
+      width: 100%;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__btn {
+      padding: 10px 20px;
+    }
+    .grid {
+      flex-direction: column;
+    }
+    .content {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .image {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
+  .testimonial {
+    &__grid.box .image {
+      max-width: 100%;
+    }
+    &__slider .swiper {
+      padding-right: 0;
+    }
+    &__body {
+      max-width: 100%;
+    }
+    &__item > img {
+      max-width: 350px;
+      height: 450px;
+    }
+    &__btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__grid .box__descr {
+      margin-top: 5px;
+    }
+  }
+  .swiper-button-next {
+    left: 350px;
+    top: 225px;
+  }
+
+  .news {
+    &__subtitle {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .grid {
+      flex-direction: column;
+    }
+    &__main {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    &__add {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__item {
+      width: 32%;
+      flex-direction: column;
+    }
+    &__img {
+      margin-bottom: 20px;
+    }
+    &__content {
+      padding-left: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .section-padding {
+    padding: 20px 0;
+  }
+  .heading {
+    &__title {
+      font-size: 30px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+
+  .header {
+    &__title {
+      font-size: 35px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+  .partners__grid img {
+    min-width: 0;
+    width: 25%;
+  }
+  .cloud__wrapper {
+    width: 100%;
+  }
+  .skilline__grid {
+    margin: 30px 0 50px 0;
+  }
+  .box {
+    &__title {
+      font-size: 25px;
+    }
+    &__descr {
+      margin-top: 10px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      padding-left: 45px;
+    }
+  }
+
+  .testimonial {
+    &__title {
+      font-size: 35px;
+    }
+    &__body {
+      position: initial;
+      height: 250px;
+      box-shadow: 0 0 0 0 #fff;
+    }
+    &__item img {
+      margin: 0 auto 10px auto;
+    }
+    &__slider .swiper {
+      padding-bottom: 0px;
+    }
+  }
+  .swiper-button-next {
+    left: 80%;
+  }
+
+  .news {
+    &__add {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    padding: 30px 0;
+    &__heading {
+      font-size: 16px;
+    }
+    &__mb {
+      margin-bottom: 25px;
+    }
+    &__subscribe {
+      font-size: 18px;
+    }
+    &__input {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    &__btn {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    &__inf {
+      font-size: 16px;
+    }
+    &__license {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .heading {
+    max-width: 100%;
+    padding: 0;
+    &__title {
+      font-size: 25px;
+      line-height: 120%;
+    }
+  }
+
+  .box {
+    &__title {
+      font-size: 20px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+  }
+  .header {
+    &__inf {
+      padding: 40px 0 0 0;
+    }
+    &__log button {
+      display: none;
+    }
+    &__title {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__video {
+      font-size: 18px;
+    }
+  }
+
+  .partners {
+    &__title {
+      font-size: 20px;
+    }
+    &__grid img {
+      width: 33.3333%;
+    }
+  }
+
+  .cloud {
+    &__title {
+      font-size: 20px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+  .skilline {
+    &__title {
+      font-size: 20px;
+    }
+    &__grid {
+      margin: 25px 0 35px 0;
+    }
+  }
+
+  .testimonial {
+    &__title {
+      font-size: 25px;
+    }
+    &__item > img {
+      width: 100%;
+      height: 350px;
+    }
+    &__body {
+      height: auto;
+      padding: 10px 15px 15px 15px;
+    }
+    &__inf {
+      flex-direction: column;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__inf div img {
+      width: 100px;
+      margin-bottom: 0;
+    }
+    &__review {
+      margin-top: 0;
+    }
+    &__btn {
+      padding: 10px 50px 10px 10px;
+      font-size: 16px;
+    }
+    &__btn::after {
+      width: 16%;
+      height: auto;
+    }
+  }
+  .swiper-button-next {
+    left: auto;
+    right: 12px;
+  }
+
+  .footer {
+    &__logo {
+      width: 100px;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+    form {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__input {
+      margin: 0 0 10px 0;
+    }
+    &__inf {
+      padding: 5px;
+    }
+  }
+}
